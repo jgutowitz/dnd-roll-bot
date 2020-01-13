@@ -11,4 +11,12 @@ fs.readdir("./events/", (err, files) => {
   });
 });
 
+fs.readdir("./players/", (err,files) =>{
+	files.forEach(file =>{
+		const eventHandler=require(`./players/${file}`);
+		const eventName=file.split(".")[0];
+		client.on(eventName, (...args) => eventHander(client, ...args));
+	});
+});
+
 client.login(process.env.ROLLBOT_TOKEN);
