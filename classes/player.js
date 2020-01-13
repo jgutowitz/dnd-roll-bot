@@ -1,11 +1,11 @@
-class Player{
+class Player {
 
-  constructor(playerName){
-    this.name=playerName;
-  }
+    constructor(playerName) {
+        this.name = playerName;
+    }
 
-  getName(){
-    return this.name;
-  }
+    getName() {
+        return this.name;
+    }
 
 }
