@@ -1,11 +1,5 @@
-class Player {
+module.exports = Player;
 
-    constructor(playerName) {
-        this.name = playerName;
-    }
-
-    getName() {
-        return this.name;
-    }
-
+function Player(playername) {
+    this.name = playername;
 }
