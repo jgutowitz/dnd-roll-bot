@@ -12,7 +12,7 @@ module.exports = (client, message) => {
     }
     else if (message.content.startsWith('!addplayer')) {
         let playerName = message.toString().split(" ")[1];
-        message.reply(`${playerName}`);
+        // message.reply(`${playerName}`);
         return addplayer(message, playerName)
     }
     else if (message.content.startsWith('!roll')) {

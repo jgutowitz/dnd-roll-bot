@@ -1,8 +1,11 @@
 const Player = require('../classes/player.js');
 module.exports = (message, playerName) => {
-    let name = new Player(playerName);
-    console.log(name);
+    let player = new Player(playerName);
+    console.log(player);
 
-    return message.reply(`Player ${name} created!`)
+    message.reply(`Player ${player.name} created!`)
+    // message.reply(`Health: ${player.health}!`)
+    // message.reply(`Strength: ${player.stength}!`)
+    // message.reply(`Dexterity: ${player.dexterity}!`)
 
 }
