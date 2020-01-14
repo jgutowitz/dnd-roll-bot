@@ -1,9 +1,9 @@
-const Player = require('../classes/player')
+const Player = require('../classes/player.js');
 module.exports = (message, playerName) => {
-  var player = new Player(playerName)
-  name=player.getName()
+    let player = new Player(playerName);
+    let name = player.getName();
 
-  return message
-    .reply(`Player ${name} created!`)
+    return message
+        .reply(`Player ${name} created!`)
 
 }
