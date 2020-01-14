@@ -19,4 +19,11 @@ fs.readdir("./players/", (err, files) => {
     });
 });
 
-client.login(process.env.ROLLBOT_TOKEN);
+if (process.env.ROLLBOT_TOKEN !== ""){
+    try{
+        client.login(process.env.ROLLBOT_TOKEN);
+
+    }catch{
+        console.log('Failed to login, check the token')
+    }
+}
