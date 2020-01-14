@@ -1,5 +1,7 @@
 module.exports = Player;
 
 function Player(playername) {
-    this.name = playername;
+    const obj = {};
+    obj.name = playername;
+    return obj;
 }
